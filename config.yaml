@@ -12,7 +12,7 @@ HEAD:
     enable: true
     expiration: 30
     last-templates:
-      ht1: [ht1]   
+      ht1: 5vhttp  
   dns:
     enabled: true
     listen: 0.0.0.0:1053
