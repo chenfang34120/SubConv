@@ -8,6 +8,27 @@ HEAD:
   external-ui: ui
   diversion:
     enable: true
+  relay:
+    enable: true
+    expiration: 30
+    last-templates:
+      ht1: http://danregit-zone-resi-region-us-session-%s-sessTime-5:ip2world@de4caa149757f677.nbd.us.ip2world.vip:6001
+    proxies:
+      - name: 985.985021765.workers.dev
+        type: vless
+        server: 172.67.0.224
+        port: 80
+        uuid: 18bc77f1-b335-48fe-8d12-82f62951d3db
+        udp: true
+        servername: 985.985021765.workers.dev
+        network: ws
+        ws-opts:
+          path: /?ed=2048
+          headers:
+            User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36
+              (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36
+            Host: 985.985021765.workers.dev
+    
   dns:
     enabled: true
     listen: 0.0.0.0:1053
