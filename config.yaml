@@ -9,266 +9,80 @@ HEAD:
   diversion:
     enable: true
   dns:
-  enabled: true
-  listen: 0.0.0.0:1053
-  ipv6: true
-  default-nameserver:
-    - 223.5.5.5
-    - 114.114.114.114
-  enhanced-mode: fake-ip
-  fake-ip-range: 198.18.0.1/16
-  fake-ip-filter:
-    - '*.lan'
-    - '*.linksys.com'
-    - '*.linksyssmartwifi.com'
-    - swscan.apple.com
-    - mesu.apple.com
-    - '*.msftconnecttest.com'
-    - '*.msftncsi.com'
-    - time.*.com
-    - time.*.gov
-    - time.*.edu.cn
-    - time.*.apple.com
-    - time1.*.com
-    - time2.*.com
-    - time3.*.com
-    - time4.*.com
-    - time5.*.com
-    - time6.*.com
-    - time7.*.com
-    - ntp.*.com
-    - ntp.*.com
-    - ntp1.*.com
-    - ntp2.*.com
-    - ntp3.*.com
-    - ntp4.*.com
-    - ntp5.*.com
-    - ntp6.*.com
-    - ntp7.*.com
-    - '*.time.edu.cn'
-    - '*.ntp.org.cn'
-    - +.pool.ntp.org
-    - time1.cloud.tencent.com
-    - +.music.163.com
-    - '*.126.net'
-    - musicapi.taihe.com
-    - music.taihe.com
-    - songsearch.kugou.com
-    - trackercdn.kugou.com
-    - '*.kuwo.cn'
-    - api-jooxtt.sanook.com
-    - api.joox.com
-    - joox.com
-    - +.y.qq.com
-    - +.music.tc.qq.com
-    - aqqmusic.tc.qq.com
-    - +.stream.qqmusic.qq.com
-    - '*.xiami.com'
-    - +.music.migu.cn
-    - +.srv.nintendo.net
-    - +.stun.playstation.net
-    - xbox.*.microsoft.com
-    - +.xboxlive.com
-    - localhost.ptlogin2.qq.com
-    - proxy.golang.org
-    - stun.*.*
-    - stun.*.*.*
-    - '*.mcdn.bilivideo.cn'
-  nameserver:
-    - https://doh.pub/dns-query
-    - https://dns.alidns.com/dns-query
-  fallback-filter:
-    geoip: false
-    ipcidr:
-      - 240.0.0.0/4
-      - 0.0.0.0/32
+    enabled: true
+    listen: 0.0.0.0:1053
+    ipv6: true
+    default-nameserver:
+      - 223.5.5.5
+      - 114.114.114.114
+    enhanced-mode: fake-ip
+    fake-ip-range: 198.18.0.1/16
+    fake-ip-filter:
+      - '*.lan'
+      - '*.linksys.com'
+      - '*.linksyssmartwifi.com'
+      - swscan.apple.com
+      - mesu.apple.com
+      - '*.msftconnecttest.com'
+      - '*.msftncsi.com'
+      - time.*.com
+      - time.*.gov
+      - time.*.edu.cn
+      - time.*.apple.com
+      - time1.*.com
+      - time2.*.com
+      - time3.*.com
+      - time4.*.com
+      - time5.*.com
+      - time6.*.com
+      - time7.*.com
+      - ntp.*.com
+      - ntp.*.com
+      - ntp1.*.com
+      - ntp2.*.com
+      - ntp3.*.com
+      - ntp4.*.com
+      - ntp5.*.com
+      - ntp6.*.com
+      - ntp7.*.com
+      - '*.time.edu.cn'
+      - '*.ntp.org.cn'
+      - +.pool.ntp.org
+      - time1.cloud.tencent.com
+      - +.music.163.com
+      - '*.126.net'
+      - musicapi.taihe.com
+      - music.taihe.com
+      - songsearch.kugou.com
+      - trackercdn.kugou.com
+      - '*.kuwo.cn'
+      - api-jooxtt.sanook.com
+      - api.joox.com
+      - joox.com
+      - +.y.qq.com
+      - +.music.tc.qq.com
+      - aqqmusic.tc.qq.com
+      - +.stream.qqmusic.qq.com
+      - '*.xiami.com'
+      - +.music.migu.cn
+      - +.srv.nintendo.net
+      - +.stun.playstation.net
+      - xbox.*.microsoft.com
+      - +.xboxlive.com
+      - localhost.ptlogin2.qq.com
+      - proxy.golang.org
+      - stun.*.*
+      - stun.*.*.*
+      - '*.mcdn.bilivideo.cn'
+    nameserver:
+      - https://doh.pub/dns-query
+      - https://dns.alidns.com/dns-query
+    fallback-filter:
+      geoip: false
+      ipcidr:
+        - 240.0.0.0/4
+        - 0.0.0.0/32
 TEST_URL: https://www.gstatic.com/generate_204
 RULESET:
-- - 🤖 ChatBot
-  - https://raw.githubusercontent.com/SubConv/ZJU-Rule/main/Clash/Ruleset/OpenAi.list
-- - 🤖 ChatBot
-  - https://raw.githubusercontent.com/SubConv/ZJU-Rule/main/Clash/Ruleset/ChatBot.list
-- - 🎯 全球直连
-  - https://raw.githubusercontent.com/SubConv/ZJU-Rule/main/Clash/LocalAreaNetwork.list
-- - 🎯 全球直连
-  - https://raw.githubusercontent.com/SubConv/ZJU-Rule/main/Clash/UnBan.list
-- - 🛑 广告拦截
-  - https://raw.githubusercontent.com/SubConv/ZJU-Rule/main/Clash/BanAD.list
-- - 🍃 应用净化
-  - https://raw.githubusercontent.com/SubConv/ZJU-Rule/main/Clash/BanProgramAD.list
-- - 🛑 广告拦截
-  - https://raw.githubusercontent.com/SubConv/ZJU-Rule/main/Clash/BanEasyList.list
-- - 🛑 广告拦截
-  - https://raw.githubusercontent.com/SubConv/ZJU-Rule/main/Clash/BanEasyListChina.list
-- - 🛡️ 隐私防护
-  - https://raw.githubusercontent.com/SubConv/ZJU-Rule/main/Clash/BanEasyPrivacy.list
-- - 📢 谷歌FCM
-  - https://raw.githubusercontent.com/SubConv/ZJU-Rule/main/Clash/Ruleset/GoogleFCM.list
-- - 📢 谷歌服务
-  - https://raw.githubusercontent.com/SubConv/ZJU-Rule/main/Clash/Ruleset/Google.list
-- - 🎯 全球直连
-  - https://raw.githubusercontent.com/SubConv/ZJU-Rule/main/Clash/Ruleset/Adobe.list
-- - Ⓜ️ 微软Bing
-  - https://raw.githubusercontent.com/SubConv/ZJU-Rule/main/Clash/Bing.list
-- - Ⓜ️ 微软云盘
-  - https://raw.githubusercontent.com/SubConv/ZJU-Rule/main/Clash/OneDrive.list
-- - Ⓜ️ 微软服务
-  - https://raw.githubusercontent.com/SubConv/ZJU-Rule/main/Clash/Microsoft.list
-- - 🍎 苹果服务
-  - https://raw.githubusercontent.com/SubConv/ZJU-Rule/main/Clash/Apple.list
-- - 📲 电报消息
-  - https://raw.githubusercontent.com/SubConv/ZJU-Rule/main/Clash/Telegram.list
-- - 🎶 网易音乐
-  - https://raw.githubusercontent.com/SubConv/ZJU-Rule/main/Clash/Ruleset/NetEaseMusic.list
-- - 🎶 Spotify
-  - https://raw.githubusercontent.com/SubConv/ZJU-Rule/main/Clash/Ruleset/Spotify.list
-- - 🎮 游戏平台
-  - https://raw.githubusercontent.com/SubConv/ZJU-Rule/main/Clash/Ruleset/Epic.list
-- - 🎮 游戏平台
-  - https://raw.githubusercontent.com/SubConv/ZJU-Rule/main/Clash/Ruleset/Origin.list
-- - 🎮 游戏平台
-  - https://raw.githubusercontent.com/SubConv/ZJU-Rule/main/Clash/Ruleset/Sony.list
-- - 🎮 游戏平台
-  - https://raw.githubusercontent.com/SubConv/ZJU-Rule/main/Clash/Ruleset/Steam.list
-- - 🎮 游戏平台
-  - https://raw.githubusercontent.com/SubConv/ZJU-Rule/main/Clash/Ruleset/Nintendo.list
-- - 📹 油管视频
-  - https://raw.githubusercontent.com/SubConv/ZJU-Rule/main/Clash/Ruleset/YouTube.list
-- - 🎥 奈飞视频
-  - https://raw.githubusercontent.com/SubConv/ZJU-Rule/main/Clash/Ruleset/Netflix.list
-- - 📺 巴哈姆特
-  - https://raw.githubusercontent.com/SubConv/ZJU-Rule/main/Clash/Ruleset/Bahamut.list
-- - 📺 哔哩哔哩
-  - https://raw.githubusercontent.com/SubConv/ZJU-Rule/main/Clash/Ruleset/BilibiliHMT.list
-- - 📺 哔哩哔哩
-  - https://raw.githubusercontent.com/SubConv/ZJU-Rule/main/Clash/Ruleset/Bilibili.list
-- - 🌏 国内媒体
-  - https://raw.githubusercontent.com/SubConv/ZJU-Rule/main/Clash/ChinaMedia.list
-- - 🌍 国外媒体
-  - https://raw.githubusercontent.com/SubConv/ZJU-Rule/main/Clash/ProxyMedia.list
-- - 🚀 节点选择
-  - https://raw.githubusercontent.com/SubConv/ZJU-Rule/main/Clash/ProxyGFWlist.list
-- - 🎯 全球直连
-  - https://raw.githubusercontent.com/SubConv/ZJU-Rule/main/Clash/ChinaIp.list
-- - 🎯 全球直连
-  - https://raw.githubusercontent.com/SubConv/ZJU-Rule/main/Clash/ChinaDomain.list
-- - 🎯 全球直连
-  - https://raw.githubusercontent.com/SubConv/ZJU-Rule/main/Clash/ChinaCompanyIp.list
-- - 🎯 全球直连
-  - https://raw.githubusercontent.com/SubConv/ZJU-Rule/main/Clash/Download.list
-- - 🎯 全球直连
-  - '[]GEOIP,CN'
-- - 🐟 漏网之鱼
-  - '[]FINAL'
 CUSTOM_PROXY_GROUP:
-- name: ♻️ 自动选择
-  type: url-test
-  rule: false
-- name: 🚀 手动切换1
-  type: select
-  manual: true
-  rule: false
-- name: 🚀 手动切换2
-  type: select
-  manual: true
-  rule: false
-- name: 🔯 故障转移
-  type: fallback
-  rule: false
-- name: 🔮 负载均衡
-  type: load-balance
-  rule: false
-- name: 🔮 香港负载均衡
-  type: load-balance
-  rule: false
-  regex: 🇭🇰|HK|Hong|Kong|HGC|WTT|CMI|港
-- name: 🤖 ChatBot
-  type: select
-  prior: PROXY
-- name: 📲 电报消息
-  type: select
-  prior: PROXY
-- name: 📹 油管视频
-  type: select
-  prior: PROXY
-- name: 🎥 奈飞视频
-  type: select
-  prior: PROXY
-- name: 📺 巴哈姆特
-  type: select
-  prior: PROXY
-- name: 📺 哔哩哔哩
-  type: select
-  prior: DIRECT
-- name: 🌍 国外媒体
-  type: select
-  prior: PROXY
-- name: 🌏 国内媒体
-  type: select
-  prior: DIRECT
-- name: 📢 谷歌FCM
-  type: select
-  prior: DIRECT
-- name: 📢 谷歌服务
-  type: select
-  prior: PROXY
-- name: Ⓜ️ 微软Bing
-  type: select
-  prior: PROXY
-- name: Ⓜ️ 微软云盘
-  type: select
-  prior: DIRECT
-- name: Ⓜ️ 微软服务
-  type: select
-  prior: DIRECT
-- name: 🍎 苹果服务
-  type: select
-  prior: DIRECT
-- name: 🎮 游戏平台
-  type: select
-  prior: DIRECT
-- name: 🎶 网易音乐
-  type: select
-  prior: DIRECT
-- name: 🎶 Spotify
-  type: select
-  prior: DIRECT
-- name: 🎯 全球直连
-  type: select
-  prior: DIRECT
-- name: 🛑 广告拦截
-  type: select
-  prior: REJECT
-- name: 🍃 应用净化
-  type: select
-  prior: REJECT
-- name: 🛡️ 隐私防护
-  type: select
-  prior: REJECT
-- name: 🐟 漏网之鱼
-  type: select
-  prior: PROXY
-- name: 🇭🇰 香港节点
-  type: url-test
-  rule: false
-  regex: 🇭🇰|HK|Hong|Kong|HGC|WTT|CMI|港
-- name: 🇨🇳 台湾节点
-  type: url-test
-  rule: false
-  regex: 🇹🇼|TW|Taiwan|新北|彰化|CHT|台|HINET
-- name: 🇸🇬 狮城节点
-  type: url-test
-  rule: false
-  regex: 🇸🇬|SG|Singapore|狮城|^新[^节北]|[^刷更]新[^节北]
-- name: 🇯🇵 日本节点
-  type: url-test
-  rule: false
-  regex: 🇯🇵|JP|Japan|Tokyo|Osaka|Saitama|东京|大阪|埼玉|日
-- name: 🇰🇷 韩国节点
-  type: url-test
-  rule: false
-  regex: 🇰🇷|KO?R|Korea|首尔|韩|韓
-- name: 🇺🇸 美国节点
-  type: url-test
-  rule: false
-  regex: 🇺🇸|US|America|United.*?States|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥
+
