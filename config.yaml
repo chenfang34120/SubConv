@@ -83,11 +83,4 @@ HEAD:
         - 240.0.0.0/4
         - 0.0.0.0/32
 TEST_URL: https://www.gstatic.com/generate_204
-RULESET:
-- - 🎯 全球直连
-  - https://raw.githubusercontent.com/SubConv/ZJU-Rule/main/Clash/LocalAreaNetwork.list
-CUSTOM_PROXY_GROUP:
-- name: 🎯 全球直连
-  type: select
-  prior: DIRECT
 
