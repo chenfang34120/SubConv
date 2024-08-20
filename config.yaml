@@ -6,4 +6,12 @@ HEAD:
   external-controller: 0.0.0.0:9093
   external-controller-tls: 0.0.0.0:9443
   external-ui: ui
+  diversion:
+  enable: true
+
+
+  relay:
+    enable: true
+    expiration: 30
+    last-templates:
   
