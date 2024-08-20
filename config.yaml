@@ -1,9 +1,11 @@
 HEAD:
-  mixed-port: 7890
+  mixed-port: 10802
   allow-lan: true
-  mode: rule
-  log-level: info
-  external-controller: :9090
+  mode: Rule
+  log-level: debug
+  external-controller: 0.0.0.0:9093
+  external-controller-tls: 0.0.0.0:9443
+  external-ui: ui
   dns:
     enable: true
     listen: 0.0.0.0:1053
