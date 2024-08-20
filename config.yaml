@@ -8,10 +8,3 @@ HEAD:
   external-ui: ui
   diversion:
   enable: true
-
-
-  relay:
-    enable: true
-    expiration: 30
-    last-templates:
-  
